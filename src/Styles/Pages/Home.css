@@ -1,0 +1,73 @@
+.home-header{
+    text-align: center;
+}
+
+.img-paper:hover{
+    border: 2px solid black;
+}
+
+.img-paper{
+    position: relative;
+    overflow: hidden;
+}
+
+.blurscreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    filter: blur(1px);
+}
+
+.img-paper:hover .blurscreen{
+    opacity: 2;
+}
+
+.img-paper button{
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 44, 44);
+}
+
+.img-paper:hover button{
+display: block;
+}
+
+@media screen and (max-width : 600px){
+    .MuiGrid-container {
+        padding: 0 !important;
+        padding-left: 85px !important;
+       justify-content: center !important;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .MuiGrid-container {
+        padding: 0 !important;
+        padding-left: 75px !important;
+       justify-content: center !important;
+    }
+}
+
+@media screen and (max-width : 375px){
+    .MuiGrid-container {
+        padding: 0 !important;
+        padding-left: 50px !important;
+       justify-content: center !important;
+    }
+}
+
+@media screen and (max-width : 350px){
+    .MuiGrid-container {
+        padding: 0 !important;
+        padding-left: 30px !important;
+       justify-content: center !important;
+    }
+}

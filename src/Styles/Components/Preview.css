@@ -1,0 +1,63 @@
+.preview-header-title {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .preview-container{
+    margin-left: 0 !important ;
+    margin-right: 0 !important;
+  }
+  
+  .resume-preview-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  #previewresume{
+    width: 590px;
+    border: 1px solid black;
+  }
+
+  .resume-preview-grid-item {
+    width: 100%;
+  }
+  
+  .resume-preview-grid-item .resume-save-container {
+    width: 100%;
+  }
+  
+  .resume-preview-grid-item .resume-save-container .resume-save-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgb(99, 93, 93);
+    margin-bottom: 15px;
+  }
+  .MuiFormControl-root.MuiTextField-root.resume-name-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .resume-preview-grid-item .resume-save-container .resume-back-next-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  #previewresume .MuiPaper-root{
+    box-shadow: none !important;
+  }
+
+  @media screen and (max-width : 870px) {
+    .resume-preview-grid-container{
+      grid-template-columns: 1fr !important;
+    }
+    #previewresume{
+      width: 100%;
+    }
+  }
+

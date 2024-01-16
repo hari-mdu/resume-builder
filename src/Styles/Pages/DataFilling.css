@@ -1,0 +1,38 @@
+.details-filling {
+  width: 100%;
+
+}
+
+.data-filling-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 100px;
+  padding: 60px 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .data-filling-container {
+    display: grid;
+    grid-template-columns: 0.3fr 4fr;
+    grid-gap: 10px;
+    padding-left: 10px;
+  }
+
+  
+}
+
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+  .details-filling-cont {
+    grid-gap: 20px;
+    padding: 40px 40px;
+
+  }
+}
+
+@media screen and (max-width : 425px) {
+  .MuiPaper-root.MuiPaper-elevation.work-experience-paper,  
+  .MuiPaper-root.MuiPaper-elevation.education-paper,
+  .MuiPaper-root.MuiPaper-elevation.key-skills-paper{
+    width: 180px !important;
+  }
+}
