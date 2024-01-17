@@ -5,7 +5,7 @@ import JsPDF from "jspdf";
 import uniqid from "uniqid";
 import { connect } from "react-redux";
 import { templates } from "../Utils/Data/Templates";
-
+import { useNavigate } from "react-router-dom";
 
 const mapStateToProps = (state) => ({
   selectedTemplateId: state.selectedTemplateReducer.selectedTemplateId,
@@ -23,6 +23,7 @@ const Preview = (props) => {
   const [resumeName, setResumeName] = useState("");
   const [error, setError] = useState("");
   // console.log("props", props)
+  const navigate = useNavigate(); 
 
   const getTemplate = (template, index) => {
     // console.log("template.id ", template.id)
@@ -82,8 +83,8 @@ const Preview = (props) => {
                 JSON.stringify(allNewResumes)
               );
 
-              window.location.reload();
-
+              // window.location.reload();
+              navigate("/my/resumes");
               return;
             }
 
@@ -114,7 +115,8 @@ const Preview = (props) => {
           }
 
           //Redirect user to the myResumes page
-          window.location.reload();
+          // window.location.reload();
+          navigate("/my/resumes");
         })
         .catch((error) => console.error(error.message));
     }

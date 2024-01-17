@@ -43,9 +43,6 @@ const Navbar = () => {
                 <Divider variant="middle" sx={{ mt: '8px' }} />
 
             </List>
-
-
-
         </Box>
     );
 
