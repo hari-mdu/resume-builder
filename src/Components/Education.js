@@ -6,14 +6,17 @@ import { connect } from "react-redux";
 import { addEducation } from "../Redux/Actions/actions";
 import { useForm, Controller } from "react-hook-form";
 
+// mapStateToProps function to map Redux state to component props
 const mapStateToProps = (state) => ({
-  educationInfo: state.educationDetailsReducer.educationInfo,
+  educationInfo: state.educationDetailsReducer.educationInfo, // Mapping educationInfo from Redux state to props
 });
 
+// mapDispatchToProps function to map dispatch actions to component props
 const mapDispatchToProps = (dispatch) => ({
-  onAddEducation: (details) => dispatch(addEducation(details)),
+  onAddEducation: (details) => dispatch(addEducation(details)), // Dispatching addEducation action with education details
 });
 
+// Array containing years for dropdown selection
 const years = [
   " Present ",
   " 2025 ",
@@ -44,27 +47,30 @@ const years = [
   " 2000 ",
 ];
 
+// Education functional component
 const Education = (props) => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); // State variable to track loading state
   const {
     register,
     handleSubmit,
     control,
     formState: { errors },
-  } = useForm();
+  } = useForm(); // Form control hook for form validation
 
+  // Event handler for navigating back
   const handleBack = () => {
-    props.setTab(props.tab - 1);
+    props.setTab(props.tab - 1); // Updating tab state to move back
   };
 
+  // Event handler for submitting education details
   const handleNext = (data) => {
-    // console.log(data);
-    setLoading(true);
-    props.onAddEducation(data);
+    setLoading(true); // Setting loading state to true
+    props.onAddEducation(data); // Dispatching action to add education details
 
+    // Simulating loading with timeout
     setTimeout(() => {
-      setLoading(false);
-      props.setTab(props.tab + 1);
+      setLoading(false); // Setting loading state to false
+      props.setTab(props.tab + 1); // Updating tab state to move forward
     }, 1000);
   };
 

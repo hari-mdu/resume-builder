@@ -20,24 +20,30 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const ITEM_HEIGHT = 48;
 
+// DetailFillingSidebar functional component
 const DetailFillingSidebar = (props) => {
+  // Function to get window size
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
   };
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-  const open = Boolean(anchorEl);
+  // State variables
+  const [anchorEl, setAnchorEl] = React.useState(null); // For Menu anchor element
+  const [windowSize, setWindowSize] = useState(getWindowSize()); // For storing window size
+  const open = Boolean(anchorEl); // For menu open state
 
+  // Event handler for opening the menu
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
+  // Event handler for closing the menu
   const handleClose = () => {
     setAnchorEl(null);
   };
 
+  // Effect hook to handle window resize
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
