@@ -19,12 +19,8 @@
     color: #000;
 }
 
-.nav-link:active{
-    color:rgb(214, 14, 14) ;
-}
-
 .active{
-    color:rgb(214, 14, 14) ;
+    color:rgb(214, 14, 14) !important;
 }
 
 .nav-img:hover{

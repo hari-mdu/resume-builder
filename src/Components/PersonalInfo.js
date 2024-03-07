@@ -11,7 +11,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import {BackNextButton,Input} from "../Pages/Index";
+import { BackNextButton, Input } from "../Pages/Index";
 import { addPersonalInfo } from "../Redux/Actions/actions";
 
 const mapStateToProps = (state) => ({
@@ -117,7 +117,7 @@ const PersonalInfo = (props) => {
 
 
   const handleCloseSnackbar = (event, reason) => {
-    console.log(event,reason)
+    console.log(event, reason)
     if (reason === "clickaway") {
       return;
     }
