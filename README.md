@@ -124,7 +124,7 @@ To install and run the Resume Builder application locally, follow these steps:
 ```
 1. Clone the repository:
 
-   git clone https://github.com/your-username/resume-builder.git
+   git clone https://github.com/hari-mdu/resume-builder.git
 
 2. Navigate to the project directory:
 
