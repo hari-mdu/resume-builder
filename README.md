@@ -1,70 +1,149 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AlmaBetter Frontend Capstone Project
 
-## Available Scripts
+## Resume-Builder
 
-In the project directory, you can run:
+Introducing Resume Builder, the ultimate React application that empowers you to craft eye-catching resumes like never before. You can easily customise your resume with Resume Builder's user-friendly interface to highlight your unique skills and professional experience.
 
-### `npm start`
+Stand out from the crowd and make a lasting impression with Resume Builder, the perfect tool to land your dream job. Start building your future today!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Just select template - Fill in the details and voila! Your resume is ready to preview and download.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Resume Builder application consists of four main pages:
 
-### `npm test`
+- **Home Page:** Displays available resume templates and allows users to select one to start creating their resume.
+- **Details Filling Page:** Enables users to fill in their personal information, work experience, education details, and skills.
+- **Preview Page:** Allows users to preview their resume before finalizing it.
+- **About Us Page:** Provides information about the application and its developers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Choose from pre-defined resume templates.
+- Fill in personal information, work experience, education details, and skills.
+- Preview the resume before finalizing.
+- Download the resume as a PDF.
+- Responsive and intuitive user interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend Development:**
+  - React.js
+  - Material UI
+  - React Router
+- **State Management:**
+  - Redux
+- **Form Validation:**
+  - React Hook Form
+- **PDF Generation:**
+  - jspdf
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Application Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+├── public/
+│	├──index.html
+│    
+├──src/
+│	├──App.js
+│	├──index.css
+│	├──index.js
+│	├──store.js
+│	├──Components/
+│		├──Templates/
+│			├──Template1.js
+│			├──Template2.js
+│			├──Template3.js
+│			├──Template4.js
+│   	├──BackNextButton.js
+│		├──CheckSelectedId.js
+│		├──DataFillingSidebar.js
+│		├──Education.js
+│		├──KeySkills.js
+│		├──NavBar.js
+│		├──PersonalInfo.js
+│		├──Preview.js
+│		├──Select.js
+│		├──TemplateEducation.js
+│		├──TemplateExperience.js
+│		├──TemplateHeader.js
+│		├──TemplateKeySkill.js
+│		├──TemplateTitle.js
+│		├──WorkExperience.js
+│	├──Pages/
+│		├──AboutUs.js
+│		├──DataFilling.js
+│		├──Home.js
+│		├──Index.js
+│		├──MyResume.js
+│	├──Redux/
+│		├──Actions/
+│			├──actions.js
+│		├──Reducers/
+│			├──combinedtReducer.js
+│			├──reducers.js
+│	├──Styles/
+│		├──Components/
+│			├──BackNextButton.css
+│			├──DataFillingSidebar.css
+│			├──Education.css
+│			├──Input.css
+│			├──KeySkills.css
+│			├──Navbar.css
+│			├──PersonalInfo.css
+│			├──srcPreview.css
+│			├──Select.css
+│			├──Template.css
+│			├──WorkExperience.css
+│		├──Pages/
+│			├──DataFilling.css
+│			├──Home.css
+│			├──MyResume.css
+│	├──Utils/
+│		├──Data/
+│			├──data.js
+│			├──Templates.js
+│		├──Images/
+│			├──template-1.JPG
+│			├──template-2.JPG
+│			├──template-3.JPG
+│			├──template-4.JPG
+│		├──InputCheck.js
+|
+├──.gitignore
+├──package-lock.json
+├──package.json
+└──README.md
+```
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To install and run the Resume Builder application locally, follow these steps:
 
-## Learn More
+```
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   git clone https://github.com/your-username/resume-builder.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Navigate to the project directory:
 
-### Code Splitting
+    cd resume-builder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install dependencies:
 
-### Analyzing the Bundle Size
+    npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Start the development server:
 
-### Making a Progressive Web App
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Links for the project
 
-### Deployment
+Deployment Link : https://resume-builder-app001.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
